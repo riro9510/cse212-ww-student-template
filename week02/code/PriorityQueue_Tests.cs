@@ -8,7 +8,12 @@ public class PriorityQueueTests
     [TestMethod]
     // Scenario: 
     // Expected Result: 
+    // 1. The first dequeued item should be "B" (highest priority).
+    // 2. The second dequeued item should be "C".
+    // 3. The third dequeued item should be "A".
     // Defect(s) Found: 
+    // - I just see the feedback I don't remember clearly what was the defect in this part of the code
+
     public void TestPriorityQueue_1()
     {
         var priorityQueue = new PriorityQueue();
@@ -23,8 +28,13 @@ public class PriorityQueueTests
 
     [TestMethod]
     // Scenario: 
-    // Expected Result: 
+   // Expected Result: 
+    // 1. The first dequeued item should be "A" (since it was enqueued first).
+    // 2. The second dequeued item should be "B".
+    // 3. The third dequeued item should be "C".
     // Defect(s) Found: 
+    // - If the elements are not dequeued in the order they were enqueued (A, B, C), it suggests that the priority queue is not 
+        // - I just see the feedback I don't remember clearly what was the defect in this part of the code
     public void TestPriorityQueue_2()
     {
              var priorityQueue = new PriorityQueue();

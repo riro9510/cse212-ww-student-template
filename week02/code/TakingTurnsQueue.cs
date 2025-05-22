@@ -31,6 +31,9 @@ public class TakingTurnsQueue
     /// person has an infinite number of turns.  An error exception is thrown 
     /// if the queue is empty.
     /// </summary>
+    /// 
+    /// Description of the defects:
+    /// Previous code just consider when people has more than one turn >1 but doesn't consider  those with less of 0 (infinite)
     public Person GetNextPerson()
     {
         if (_people.Count == 0)
